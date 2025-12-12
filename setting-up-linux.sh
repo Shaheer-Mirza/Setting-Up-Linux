@@ -39,6 +39,7 @@ sudo systemctl enable snapd.apparmor.service
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 sudo apt install plasma-discover-backend-flatpak
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-
+#Install OBS Studio
+flatpak install flathub com.obsproject.Studio
