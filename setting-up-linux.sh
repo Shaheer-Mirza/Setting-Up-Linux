@@ -7,8 +7,8 @@ cd ~/Downloads
 
 #install google chrome
 
-#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#sudo apt install ./google-chrome-stable_current_amd64.deb -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
 
 #Install FDM
 
@@ -26,7 +26,7 @@ cd ~/Downloads
 
 #Lid Close Action
 
-sudo sh -c 'printf "\nHandleLidSwitch=ignore\nHandleLidSwitchExternalPower=ignore\nHandleLidSwitchDocked=ignore\n" >> /etc/systemd/logind.conf'
+sudo sh -c 'printf "HandleLidSwitch=ignore\nHandleLidSwitchExternalPower=ignore\nHandleLidSwitchDocked=ignore\n" >> /etc/systemd/logind.conf'
 sudo systemctl restart systemd-logind
 
 #install snap
