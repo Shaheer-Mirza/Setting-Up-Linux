@@ -23,6 +23,8 @@ chmod +x build-unix.sh
 ./build-unix.sh
 cp elephant.fda ~/Downloads/
 cd ~/Downloads
+# Install deno for elephant add-on
+curl -fsSL https://deno.land/install.sh | sh
 
 #Lid Close Action
 
