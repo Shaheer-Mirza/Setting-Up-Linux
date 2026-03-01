@@ -33,18 +33,20 @@ sudo systemctl restart systemd-logind
 
 #install snap
 
-sudo apt install snapd
+sudo apt install snapd -y
 sudo systemctl enable snapd.apparmor.service
 
 #Install Flathub
 
 sudo apt install flatpak
-sudo apt install gnome-software-plugin-flatpak
-sudo apt install plasma-discover-backend-flatpak
+sudo apt install gnome-software-plugin-flatpak -y
+sudo apt install plasma-discover-backend-flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 #Install OBS Studio
 flatpak install flathub com.obsproject.Studio
+# Install VLC Media Player
+sudo apt install vlc -y
 
 
 #Installing Warp
